@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .section4 {
+        background-image: url(Price&Footer\ Section.png);
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+      }
+      .words {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 10%;
+      }
+      .Destination {
+        color: #000;
+        text-align: center;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .Pack {
+        color: rgba(24, 24, 27, 0.7);
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      .zaibox {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+      .box {
+        height: 527px;
+        width: 384px;
+        border-radius: 40px;
+        background-color: #fafbfc;
+      }
+      .box:hover {
+        box-shadow: -8px -8px 0px 0px rgba(31, 114, 170, 0.46),
+          8px 8px 0px 0px rgba(41, 114, 139, 0.25);
+      }
+      .heart_text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        padding: 32px 24px 24px 24px;
+      }
+      .budget {
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 16px;
+      }
+      .five {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: start;
+        padding: 10px 20px 10px 24px;
+      }
+      .fivea {
+        color: black;
+        font-size: 40px;
+        font-weight: 600;
+        display: inline-block;
+      }
+      .ess {
+        display: inline-block;
+        color: #919191;
+        font-size: 16px;
+        font-weight: 500;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: start;
+        padding: 0px 0px 5px 24px;
+      }
+      .texts {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: start;
+        padding: 0px 0px 16px 43.5px;
+      }
+      .Include {
+        display: inline-block;
+        color: #121316;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 24px;
+        margin-left: 27px;
+      }
+      .checkword {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+      }
+      .group {
+        display: inline-block;
+        color: #3f4145;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 35px;
+      }
+
+      .select_button {
+        width: 336px;
+        height: 48px;
+        background-color: #a4d1e2;
+        border-radius: 999px;
+        border: none;
+        font-weight: 800;
+      }
+
+      .selet_button:hover .select_button {
+        color: white;
+        background-color: black;
+      }
+
+      .iconn {
+        width: 20px;
+        height: 20px;
+        border-radius: 999px;
+        border: 1px solid #121316;
+      }
+      .page3 {
+        position: relative;
+        width: 640px;
+        height: 640px;
+      }
+      .nnc {
+        display: flex;
+        width: 53px;
+        height: 19px;
+        border-radius: 9999px;
+        padding: var(--4-px-unit-1, 4px) var(--16-px-unit-4, 16px);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #6972b5;
+      }
+      .popular {
+        width: 68px;
+        height: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        color: #fafbfc;
+      }
+      .zaipopular {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        align-items: center;
+      }
+
+      .logos {
+        width: 68px;
+        height: 15px;
+
+        line-height: normal;
+
+        color: #6972b5;
+        text-align: center;
+
+        font-size: 18px;
+
+        font-weight: 700;
+        line-height: normal;
+      }
+      .logos_nnc {
+        display: flex;
+        border-radius: 9999px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        min-height: 44px;
+        padding: 10px 20px;
+        background: #fafbfc;
+      }
+      .zai_logos {
+        display: flex;
+        width: 1240px;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .zai_logos {
+        display: flex;
+        width: 1240px;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 10px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="section4">
+      <div class="hero">
+        <div class="words">
+          <h1 class="Destination">Pricing of Our Agency</h1>
+          <h3 class="Pack">Choose a package that’s right for you</h3>
+        </div>
+
+        <div class="zaibox">
+          <div class="box">
+            <div class="heart_text">
+              <img src="container.png" alt="icon" />
+              <span class="budget">Budget Package</span>
+            </div>
+            <div class="five">
+              <span class="fivea">500$</span>
+            </div>
+            <div>
+              <span class="ess"> Essential Covered </span>
+            </div>
+            <div class="texts">
+              <div>
+                <span class="Include">Includes:</span>
+              </div>
+              <div class="checkword">
+                <span><img src="check.png" alt="check" /></span>
+                <span class="group">Group transportation (shared van/bus)</span>
+              </div>
+              <div class="checkword">
+                <span><img src="check.png" alt="check" /></span>
+                <span class="group"
+                  >Standart accommodation (yurt or guesthouse)</span
+                >
+              </div>
+              <div class="checkword">
+                <span><img src="check.png" alt="check" /></span>
+                <span class="group">Guided lake tour</span>
+              </div>
+              <div class="checkword">
+                <span><img src="check.png" alt="check" /></span>
+                <span class="group">1 meal per day (breakfast)</span>
+              </div>
+            </div>
+            <div class="button">
+              <button class="select_button">Select package</button>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="heart_text">
+              <img src="container.png" alt="icon" />
+              <span class="budget">Standard Package</span>
+            </div>
+            <div class="five">
+              <span class="fivea">800$</span>
+            </div>
+            <div class="zaipopular">
+              <span class="ess">Balanced Adventure</span>
+              <div class="nnc">
+                <div class="container">
+                  <div>
+                    <span class="popular">Popular</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="texts">
+              <div>
+                <span class="Include">Includes:</span>
+              </div>
+              <div class="checkword">
+                <span><img src="check.png" alt="check" /></span>
+                <span class="group">Comfortable transportation (mini-bus)</span>
+              </div>
+              <div class="checkword">
+                <span><img src="check.png" alt="check" /></span>
+                <span class="group"
+                  >Mid-range accommodation (private yurt or lodge)</span
+                >
+              </div>
+              <div class="checkword">
+                <span><img src="check.png" alt="check" /></span>
+                <span class="group">Guided lake tour + nearby hiking</span>
+              </div>
+              <div class="checkword">
+                <span><img src="check.png" alt="check" /></span>
+                <span class="group"
+                  >2 meals per day (breakfast and dinner)</span
+                >
+              </div>
+            </div>
+            <div class="button">
+              <button class="select_button">Select package</button>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="heart_text">
+              <img src="container.png" alt="icon" />
+              <span class="budget">Luxury Package</span>
+            </div>
+            <div class="five">
+              <span class="fivea">1200$</span>
+            </div>
+            <div>
+              <span class="ess">Ultimate Comfort</span>
+            </div>
+            <div class="texts">
+              <div>
+                <span class="Include">Includes:</span>
+              </div>
+              <div class="checkword">
+                <span><img src="check.png" alt="check" /></span>
+                <span class="group">Private transportation (SUV)</span>
+              </div>
+              <div class="checkword">
+                <span><img src="check.png" alt="check" /></span>
+                <span class="group"
+                  >Luxury accommodation (lakefront lodge)</span
+                >
+              </div>
+              <div class="checkword">
+                <span><img src="check.png" alt="check" /></span>
+                <span class="group"
+                  >Guided tours (lake + reindeer herder experience)</span
+                >
+              </div>
+              <div class="checkword">
+                <span><img src="check.png" alt="check" /></span>
+                <span class="group">All meals included (local cuisine)</span>
+              </div>
+            </div>
+            <div class="button">
+              <button class="select_button">Select package</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="zai_fb">
+          <div class="zai_logos">
+            <div class="logos_nnc">
+              <div class="container">
+                <div>
+                  <span class="logos">Facebook</span>
+                </div>
+              </div>
+            </div>
+            <div class="logos_nnc">
+              <div class="">
+                <div>
+                  <span class="logos">Instagram</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="logo.png" alt="logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

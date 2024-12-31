@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hanuman:wght@100;300;400;700;900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        border: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+
+      .package-container {
+        display: flex;
+        width: 384px;
+        height: 527px;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 40px;
+        background: #fafbfc;
+      }
+
+      .header-container {
+        display: flex;
+        align-items: center;
+        padding: 32px 24px 24px 24px;
+        gap: 16px;
+        width: 100%;
+      }
+
+      .heart-icon {
+        border-radius: 50%;
+        border: 1px solid #d6d8db;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .content {
+        width: 100%;
+        height: 100%;
+        padding: 12px 24px 48px 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
+
+      button {
+        border-radius: 9999px;
+        padding: 12px 16px;
+        width: 100%;
+        background: #a4d1e2;
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: -0.16px;
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .includes {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .includes-title {
+        margin-left: 40px;
+      }
+      .detail {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: auto;
+      }
+
+      .package-container:hover {
+        box-shadow: -8px -8px 0px 0px rgba(46, 65, 71, 0.4),
+          8px 8px 0px 0px rgba(41, 114, 139, 0.25);
+      }
+
+      .package-container:hover .content button {
+        background-color: black;
+        color: white;
+      }
+
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #9fc6de;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="package-container">
+        <div class="header-container">
+          <div class="heart-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M9.99996 17.6458L8.79163 16.5458C4.49996 12.6542 1.66663 10.0875 1.66663 6.93751C1.66663 4.37084 3.68329 2.35417 6.24996 2.35417C7.69996 2.35417 9.09163 3.02917 9.99996 4.09584C10.9083 3.02917 12.3 2.35417 13.75 2.35417C16.3166 2.35417 18.3333 4.37084 18.3333 6.93751C18.3333 10.0875 15.5 12.6542 11.2083 16.5542L9.99996 17.6458Z"
+                fill="#121316"
+              />
+            </svg>
+          </div>
+          <h3>Budget Package</h3>
+        </div>
+        <div class="content">
+          <div class="detail">
+            <div class="price">
+              <h3>500$</h3>
+              <p>Essentials Covered</p>
+            </div>
+            <div class="includes">
+              <p class="includes-title">Includes:</p>
+              <div class="item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M8.03622 12.5227C7.64564 12.9129 7.01273 12.9128 6.62234 12.5224L4.44161 10.3417C4.11681 10.0169 3.59048 10.0159 3.26453 10.3396C2.93695 10.6649 2.93601 11.1944 3.26245 11.5208L6.622 14.8804C7.01253 15.2709 7.64569 15.2709 8.03622 14.8804L16.7415 6.17514C17.066 5.85059 17.066 5.3244 16.7415 4.99986C16.417 4.67542 15.8911 4.6753 15.5665 4.99958L8.03622 12.5227Z"
+                    fill="#0B151E"
+                  />
+                </svg>
+                <p>Group transportation (shared van/bus)</p>
+              </div>
+              <div class="item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M8.03622 12.5227C7.64564 12.9129 7.01273 12.9128 6.62234 12.5224L4.44161 10.3417C4.11681 10.0169 3.59048 10.0159 3.26453 10.3396C2.93695 10.6649 2.93601 11.1944 3.26245 11.5208L6.622 14.8804C7.01253 15.2709 7.64569 15.2709 8.03622 14.8804L16.7415 6.17514C17.066 5.85059 17.066 5.3244 16.7415 4.99986C16.417 4.67542 15.8911 4.6753 15.5665 4.99958L8.03622 12.5227Z"
+                    fill="#0B151E"
+                  />
+                </svg>
+                <p>Standard accommodation (yurt or guesthouse)</p>
+              </div>
+              <div class="item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M8.03622 12.5227C7.64564 12.9129 7.01273 12.9128 6.62234 12.5224L4.44161 10.3417C4.11681 10.0169 3.59048 10.0159 3.26453 10.3396C2.93695 10.6649 2.93601 11.1944 3.26245 11.5208L6.622 14.8804C7.01253 15.2709 7.64569 15.2709 8.03622 14.8804L16.7415 6.17514C17.066 5.85059 17.066 5.3244 16.7415 4.99986C16.417 4.67542 15.8911 4.6753 15.5665 4.99958L8.03622 12.5227Z"
+                    fill="#0B151E"
+                  />
+                </svg>
+                <p>Guided lake tour</p>
+              </div>
+              <div class="item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M8.03622 12.5227C7.64564 12.9129 7.01273 12.9128 6.62234 12.5224L4.44161 10.3417C4.11681 10.0169 3.59048 10.0159 3.26453 10.3396C2.93695 10.6649 2.93601 11.1944 3.26245 11.5208L6.622 14.8804C7.01253 15.2709 7.64569 15.2709 8.03622 14.8804L16.7415 6.17514C17.066 5.85059 17.066 5.3244 16.7415 4.99986C16.417 4.67542 15.8911 4.6753 15.5665 4.99958L8.03622 12.5227Z"
+                    fill="#0B151E"
+                  />
+                </svg>
+                <p>1 meal per day (breakfast)</p>
+              </div>
+            </div>
+          </div>
+          <button>Select package</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
